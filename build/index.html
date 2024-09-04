@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Restaurant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/96d9e792db.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen">
+    <header class="w-full bg-white shadow-md sticky top-0 z-10">
+        <section class="w-11/12 max-w-6xl mx-auto py-3 flex justify-between items-center">
+            <div class="max-w-[110px]">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div>
+                <button id="hamburger" class="md:hidden text-2xl">
+                    &#9776;
+                </button>
+                <nav id="main-nav" class="hidden md:flex gap-12">
+                    <a href="#hero" class="text-lg font-medium">Home</a>
+                    <a href="#menu" class="text-lg font-medium">Menu</a>
+                    <a href="#footer" class="text-lg font-medium">About</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="hidden flex-col bg-white w-full min-h-screen absolute top-0">
+            <button id="cross" class="text-3xl text-black self-end p-2 mr-6 mt-4">
+                &times;
+            </button>
+            <nav aria-label="mobile-nav" class="min-h-screen flex flex-col justify-center items-center pb-28 gap-12">
+                <a href="#hero" class="text-lg text-center font-medium">Home</a>
+                    <a href="#menu" class="text-lg text-center font-medium">Menu</a>
+                    <a href="#footer" class="text-lg text-center font-medium">About</a>
+            </nav>
+        </section>
+    </header>
+
+
+    <main>
+        <section class="mb-20 w-11/12 max-w-6xl mx-auto mt-12 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-14 scroll-m-40" id="hero">
+            <img src="./images/hero_image.png" class="max-w-[400px] w-full p-6 md:p-1" alt="Hero Dish Image">
+            <div class="flex flex-col gap-4">
+                <p class="bg-[#149f39] w-fit text-white py-1 px-2 text-sm">50% OFF ALL PRODUCTS</p>
+                <h1 class="text-3xl md:text-5xl font-bold">Enjoy Your Delicious Food</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus aspernatur ullam id soluta fugit
+                    adipisci iusto beatae voluptatem similique voluptas?</p>
+                <button class="bg-[#ffa931] text-white text-2xl active:bg-yellow-300 py-2 px-5 w-fit">Explore
+                    Now</button>
+            </div>
+        </section>
+
+
+
+        <section class="w-11/12 max-w-6xl mx-auto flex justify-between flex-wrap gap-5 mb-20">
+            <div class="flex items-center justify-between max-w-[300px] gap-4 mx-auto shadow-tag p-3 cursor-pointer">
+                <img src="./images/discount.png" class="w-[50px]" alt="Discount Image">
+                <div>
+                    <h3 class="font-bold">Discount Voucher</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between max-w-[300px] gap-4 mx-auto shadow-tag p-3 cursor-pointer">
+                <img class="w-[50px]" src="./images/fresh.png" alt="Food Image">
+                <div>
+                    <h3 class="font-bold">Fresh Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between max-w-[300px] gap-4 mx-auto shadow-tag p-3 cursor-pointer">
+                <img src="./images/delivery.png" alt="Delivery Image" class="w-[50px]">
+                <div>
+                    <h3 class="font-bold">Fast Home Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="menu" class="w-11/12 max-w-6xl mx-auto mb-20">
+            <p class="bg-[#149f39] text-nowrap text-white py-1 px-3 text-lg w-fit mx-auto">Our Menu</p>
+            <h1 class="text-center text-4xl m-10 mb-14 font-semibold">Explore Our Menu</h1>
+            <div class="grid grid-cols-menu place-content-center max-w-[800px] gap-8 mx-auto justify-center">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image3.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image4.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image5.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image6.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image3.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image4.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image4.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image5.png"
+                    alt="Menu Item Image">
+                <img class="rounded-3xl hover:scale-105 transition-all" src="./images/grid_image6.png"
+                    alt="Menu Item Image">
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="bg-[#fff0db] pb-8">
+        <section class="w-11/12 max-w-6xl mx-auto grid grid-cols-footer justify-between py-12 pb-20 gap-12">
+            <div>
+                <div class="max-w-[120px]">
+                    <img src="./images/logo.png" alt="Restaurant Logo">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-3">Main Link</h2>
+                <ul>
+                    <li><a href="">Order Tracking</a></li>
+                    <li><a href="">New Order</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">News & Blogs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-3">Support</h2>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="mb-5">
+                    <h2 class="text-xl font-bold mb-3">Join Our Newsletter</h2>
+                    <input class="bg-white px-1 border border-solid border-gray-400" type="text" placeholder="Enter your Email address">
+                </div>
+                <div>
+                    <h2 class="font-bold text-xl mb-3">Follow Us</h2>
+                    <ul class="flex gap-4 text-2xl">
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <p class="text-center">Designed using Tailwind CSS with Love.</p>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
